@@ -1,0 +1,50 @@
+.menu {
+    list-style-type: none;
+    background-color: rgb(90, 87, 87);
+    margin: 0 auto;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.menu li {
+    display: inline;
+    padding: 2px;
+    font-size: 23px;
+    font-weight: 700;
+    width: 100px;
+    color: #ffffff;
+    height: 100%;
+    transition: background-color 0.2s ease-in
+}
+.menu li:hover {
+    background-color: rgb(243, 224, 224);
+    color: rgb(90, 87, 87);
+}
+.menu li a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 50px;
+}
+
+.subMenu a ul{
+    display: none;
+}
+.subMenu a {
+    position: relative;
+}
+
+.subMenu a ul {
+    display: none;
+    position: absolute;
+    left: -22px;
+    top: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.subMenu:hover a ul {
+    display: flex;
+    background-color: rgb(90, 87, 87);
+}
